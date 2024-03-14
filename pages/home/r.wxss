@@ -1,0 +1,42 @@
+/* pages/home/r.wxss */
+button{
+width:80% !important;
+margin-top:2em;
+}
+.mask {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.6);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .3s;
+}
+.mask.show {
+	opacity: 1;
+	visibility: visible;
+}
+.dialog {
+	position: fixed;
+	background-color: #fff;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-height: 255px;
+	max-height: 75%;
+	z-index: 5000;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	overflow: hidden;
+	padding: 0 24px;
+	padding: 0 24px constant(safe-area-inset-bottom) 24px;
+	padding: 0 24px env(safe-area-inset-bottom) 24px;
+	transform: translateY(100%);
+	transition: transform .3s;
+}
+.dialog.show {
+	transform: translateY(0);
+}

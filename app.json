@@ -1,0 +1,36 @@
+{
+	"pages": [
+		"pages/home/r",
+		"pages/home/w",
+		"pages/mifareClassic/r",
+		"pages/mifareClassic/w",
+		"pages/cardNo/index"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "Weixin",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#000000",
+		"list": [
+			{
+				"selectedIconPath": "img/nfc-full-0.png",
+				"iconPath": "img/nfc.png",
+				"pagePath": "pages/home/r",
+				"text": "读取"
+			},
+			{
+				"selectedIconPath": "img/nfc-full-1.png",
+				"iconPath": "img/nfc.png",
+				"pagePath": "pages/home/w",
+				"text": "写入"
+			}
+		]
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"lazyCodeLoading": "requiredComponents"
+}

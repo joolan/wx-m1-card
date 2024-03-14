@@ -1,0 +1,32 @@
+<!--pages/home/r.wxml-->
+
+<navigator url="/pages/mifareClassic/r">
+  <button>MifareClassic 手动入参</button>
+</navigator>
+
+
+<navigator url="/pages/cardNo/index">
+  <button>读取会员卡号 + IC HEX</button>
+</navigator>
+
+<view >
+	<button type="primary" style="background-color: #8fbc8f;color: #fff;" bindtap="readDirect">直接读取指定区块HEX</button>
+</view>
+<view>
+  <view class="mask {{winShow}}"  bindtap="closeNfc">
+	
+	</view>
+  <view class="dialog {{winShow}}" >
+	<text>请将卡片放到感应区域</text>
+	<text style="color:red;font-size:12px">(请在本页面打开后再移入卡片)</text>
+	<image src="../../img/nfc-pic.jpg" model="aspectFill"></image>
+	</view>
+</view>
+
+<view class="c">
+  读取结果(HEX)
+  <view wx:for="{{result}}" wx:key="item" style="background-color: #fff;margin: 0 10px;">
+    <text user-select style="font-size: 12px; margin-top:2em;">{{item}}</text>
+	</view>
+
+  </view>

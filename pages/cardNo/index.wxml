@@ -1,0 +1,22 @@
+<!--pages/nfct/nfct.wxml-->
+
+<view class="c">
+  读取结果(HEX)
+  <view wx:for="{{result}}" wx:key="item" style="background-color: #fff;margin: 0 10px;">
+    <text user-select style="font-size: 16px; margin-top:2em;">{{item}}</text>
+	
+
+  </view>
+	<view class="c">
+		<text user-select style="font-size: 16px; margin-top:2em;">会员卡号：{{cardNo}}</text>
+	</view>
+	
+	
+	<view class="c">
+		<text user-select style="font-size: 16px; margin-top:2em;">IC卡号HEX：{{icNo}}</text>
+	</view>
+</view>
+<button type="primary" style="background-color: #8fbc8f;color: #fff;" bindtap="readCardNo">读取会员卡号</button>
+<!-- <button type="warn" bindtap="goWrite">
+  去写入
+</button> -->
